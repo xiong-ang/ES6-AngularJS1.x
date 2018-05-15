@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <title>Window</title>
+</head>
+
+<body>
+        <div class="container" ng-app="myApp" ng-controller="controller as vm">
+            <h-directive>计算器</h-directive>
+            <div>
+                <input ng-model="vm.x" ng-change="vm.add()">+
+                <input ng-model="vm.y" ng-change="vm.add()">=
+                <input ng-model="vm.z">
+            </div>
+            <div>
+                <p ng-bind="vm.messageService.smessage"></p>
+            </div>
+            <h-directive>登录框</h-directive>
+            <my-component></my-component>
+                
+        </div>
+        
+        
+
+    <script src="https://cdn.bootcss.com/angular.js/1.5.6/angular.js"></script>
+</body>
+
+</html>
