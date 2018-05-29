@@ -96,6 +96,18 @@ export default MySvr;
 MyModule.service('MySrv',MySrv);
 //Or
 MyModule.factory('MySrv',()=>{return new MySrv});
+
+//Use
+MySrv.*;   
+
+
+
+//Or
+MyModule.factory('MySrv',()=>{return MySrv});
+
+//Use
+let srv = new MySrv;
+srv.*;
 ```
 
 
